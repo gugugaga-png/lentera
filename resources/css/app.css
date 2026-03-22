@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+.dashed-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 12px;
+    background-image: repeating-linear-gradient(
+        to right,
+        #6b7280 0,
+        #6b7280 6px,
+        transparent 6px,
+        transparent 18px
+    );
+}
